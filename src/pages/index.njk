@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/src/styles.scss">
-    <script type="module" src="/src/index.js"></script>
-</head>
-
-<body>
-    <div class="container content">
-        <h1>Hello Vite!!</h1>
+{% extends "src/pages/partials/layout.njk" %}
+{% block content %}
+    <h1>Hello Vite!!</h1>
         <button class="button is-primary">Click me</button>
         <div class="notification is-primary mt-2">
             <button class="delete"></button>
@@ -20,7 +9,6 @@
             nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus
             diam, et dictum <a>felis venenatis</a> efficitur.
         </div>
-    </div>
-</body>
-
-</html>
+{% endblock %}
+       
+ 

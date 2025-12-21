@@ -9,9 +9,12 @@
   },
   "devDependencies": {
     "@types/bun": "latest",
+    "@vituum/vite-plugin-nunjucks": "^1.1.0",
     "bulma": "^1.0.4",
+    "nunjucks": "^3.2.4",
     "sass-embedded": "^1.97.0",
-    "vite": "^7.3.0"
+    "vite": "^7.3.0",
+    "vituum": "^1.2.0"
   },
   "peerDependencies": {
     "typescript": "^5"
