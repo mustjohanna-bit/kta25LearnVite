@@ -11,8 +11,12 @@
         </div>
         <ul>
             {% for i in range (0, 10)%}
+            {% if 1%2 %}
             <li> {{ i }} </li>
+             {% else %}
+            <li class="has-text-primary"> {{ i }} </li>
             <li>Item {{ i }}</li>
+            {% endif %}
             {% endfor %}
         </ul>
 {% endblock %}
