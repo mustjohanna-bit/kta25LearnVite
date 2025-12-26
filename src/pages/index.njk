@@ -1,4 +1,4 @@
-{% extends "src/pages/partials/layout.njk" %}
+{% extends "partials/layout.njk" %}
 {% block content %}
     <h1>Hello Vite!!</h1>
         <button class="button is-primary">Click me</button>
@@ -9,6 +9,12 @@
             nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus
             diam, et dictum <a>felis venenatis</a> efficitur.
         </div>
+        <ul>
+            {% for i in range (0, 10)%}
+            <li> {{ i }} </li>
+            <li>Item {{ i }}</li>
+            {% endfor %}
+        </ul>
 {% endblock %}
        
  

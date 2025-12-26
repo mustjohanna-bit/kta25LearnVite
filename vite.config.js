@@ -4,6 +4,8 @@ import nunjucks from '@vituum/vite-plugin-nunjucks';
 export default {
     plugins: [
         vituum(), 
-        nunjucks(),
+        nunjucks({
+            root: './src'
+        }),
     ]
 }
